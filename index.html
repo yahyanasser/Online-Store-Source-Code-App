@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy App Source Code</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+    form table {
+      margin: 0 auto 20px auto;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    input[type="image"] {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Buy App Source Code</h1>
+    <p>You can purchase the full source code of the app now. Price: <strong>$200</strong></p>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <input type="hidden" name="hosted_button_id" value="A9U4G8KQ2ZPJN" />
+      <table>
+        <tr>
+          <td>
+            <input type="hidden" name="on0" value="How do you want to receive it?"/>
+            How do you want to receive it?
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select name="os0">
+              <option value="Ensvato">Ensvato</option>
+              <option value="Github">Github</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="hidden" name="on1" value=" Account ID "/>
+             Account ID 
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="os1" maxLength="200" />
+          </td>
+        </tr>
+      </table>
+      <input type="hidden" name="currency_code" value="USD" />
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+    </form>
+  </div>
+</body>
+</html>
